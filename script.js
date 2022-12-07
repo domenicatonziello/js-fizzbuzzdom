@@ -24,22 +24,18 @@ let blockList =  `<ul class="block-list">`;
 // Generare numeri da 1 a 100:
 for (let i= 1; i <= 100; i++){
     if( (i % 3 === 0) && ( i % 5 === 0)){
-        const fizzBuzz = 'fizzbuzz';
-        // console.log(fizzBuzz);
-        blockList += `<li class= "bg-pink"> ${fizzBuzz} </li>`;
+        // const fizzBuzz = "fizzbuzz"
+        blockList += `<li class= "bg-pink"> fizzBuzz </li>`;
     }
     else if (i % 3 === 0){
-        const fizz = 'Fizz';
-        // console.log(fizz);
-        blockList += `<li class = "bg-aqua"> ${fizz} </li>`;
+        // const fizz = 'Fizz';
+        blockList += `<li class = "bg-aqua"> fizz </li>`;
     }
     else if(i % 5 === 0) {
-        const buzz = 'Buzz';
-        // console.log(buzz);
-        blockList += `<li class = "bg-yellow"> ${buzz} </li>`;
+        // const buzz = 'Buzz';
+        blockList += `<li class = "bg-yellow"> buzz </li>`;
     }
     else{
-        // console.log(i);
         blockList += `<li class= "bg-blue"> ${i}</li>`;
     }
 }
