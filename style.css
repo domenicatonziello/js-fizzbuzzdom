@@ -8,9 +8,18 @@
 body{
     font-family: sans-serif;
     text-align: center;
+    background-color: rgb(8,59,76);
+}
+h1{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
 }
 /* Utility */
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+.d-flex{
+    display: flex;
 }
