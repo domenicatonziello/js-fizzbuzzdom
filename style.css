@@ -17,9 +17,31 @@ h1{
 }
 /* Utility */
 .container{
-    max-width: 1200px;
+    max-width: 950px;
     margin: 0 auto;
 }
-.d-flex{
+.block-list{
+    list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block-list li{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    margin: 10px;
+}
+.bg-blue{
+    background-color: rgb(19,137,178);
+}
+.bg-yellow{
+    background-color: rgb(255,209,102);
+}
+.bg-aqua{
+    background-color: rgb(12,214,161);
+}
+.bg-pink{
+    background-color: rgb(240,70,111);
 }

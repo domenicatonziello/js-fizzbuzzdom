@@ -17,22 +17,34 @@ per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto 
 */ 
 
 // Prendere elementi dal DOM:
+const container = document.querySelector('.container');
+// Preparare il blocco
+let blockList =  `<ul class="block-list">`;
 
 // Generare numeri da 1 a 100:
 for (let i= 1; i <= 100; i++){
     if( (i % 3 === 0) && ( i % 5 === 0)){
-        const fizzBuzz = 'fizzbuzz'
-        console.log(fizzBuzz);
+        const fizzBuzz = 'fizzbuzz';
+        // console.log(fizzBuzz);
+        blockList += `<li class= "bg-pink"> ${fizzBuzz} </li>`;
     }
     else if (i % 3 === 0){
-        const fizz = 'Fizz'
-        console.log(fizz);
+        const fizz = 'Fizz';
+        // console.log(fizz);
+        blockList += `<li class = "bg-aqua"> ${fizz} </li>`;
     }
     else if(i % 5 === 0) {
-        const buzz = 'Buzz'
-        console.log(buzz);
+        const buzz = 'Buzz';
+        // console.log(buzz);
+        blockList += `<li class = "bg-yellow"> ${buzz} </li>`;
     }
     else{
-        console.log(i);
+        // console.log(i);
+        blockList += `<li class= "bg-blue"> ${i}</li>`;
     }
 }
+
+// chiudo blocco 
+ blockList += `</ul>`;
+//  stampo blocco in pagina:
+container.innerHTML = blockList;
